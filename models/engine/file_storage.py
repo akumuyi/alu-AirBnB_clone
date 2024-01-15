@@ -83,4 +83,3 @@ class FileStorage:
                 json.dump(self.__objects, jsfps)
         except FileNotFoundError:
             pass
-
