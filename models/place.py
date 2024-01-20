@@ -34,7 +34,6 @@ class Place(BaseModel):
     latitude = 0.0
     longitude = 0.0
     amenity_ids = []
-
     def __init__(self):
         self.city_id = ""
         self.user_id = ""
@@ -48,4 +47,3 @@ class Place(BaseModel):
         self.longitude = 0.0
         self.amenity_ids = []
         super().__init__()
-

@@ -31,7 +31,6 @@ class BaseModel:
             self.created_at = datetime.now()
             self.updated_at = datetime.now()
             storage.new(self)
-
         else:
             for key in list(kwargs):
                 if key == "__class__":
@@ -46,7 +45,6 @@ class BaseModel:
                     self.name = kwargs.get(key)
                 else:
                     self.my_number = kwargs.get(key)
-
     def save(self):
         """
         save(self): updates the public instance attribute
@@ -57,7 +55,6 @@ class BaseModel:
         self.to_dict()
         storage.save()
         self.__dict__ = copy_datetime_dict
-
     def to_dict(self):
         new_dict = self.__dict__
         """
@@ -76,11 +73,9 @@ class BaseModel:
         """
         new_dict["__class__"] = type(self).__name__
         return new_dict
-
     def __str__(self):
         """
         should print:
         [<class name>] (<self.id>) <self.__dict__>
         """
         return f"[{type(self).__name__}] ({self.id}) {self.__dict__}"
-
