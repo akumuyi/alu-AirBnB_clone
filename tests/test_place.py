@@ -35,4 +35,3 @@ class TestPlace(unittest.TestCase):
         self.assertEqual(Place.latitude, 0.0)
         self.assertEqual(Place.longitude, 0.0)
         self.assertEqual(Place.amenity_ids, [])
-

@@ -26,4 +26,3 @@ class TestCity(unittest.TestCase):
     def test_city_public_class_attribute(self):
         self.assertEqual(City.state_id, "")
         self.assertEqual(City.name, "")
-

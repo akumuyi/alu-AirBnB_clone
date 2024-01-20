@@ -25,4 +25,3 @@ class TestAmenity(unittest.TestCase):
 
     def test_amenity_public_class_attribute(self):
         self.assertEqual(Amenity.name, "")
-

@@ -177,4 +177,3 @@ class TestBaseModel(unittest.TestCase):
         self.assertDictEqual(obj1_new_dict, obj1.__dict__)
         self.assertDictEqual(obj2_new_dict, obj2.__dict__)
         self.assertDictEqual(obj3_new_dict, obj3.__dict__)
-

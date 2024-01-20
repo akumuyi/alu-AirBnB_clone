@@ -25,4 +25,3 @@ class TestState(unittest.TestCase):
 
     def test_state_public_class_attribute(self):
         self.assertEqual(State.name, "")
-
