@@ -19,4 +19,3 @@ print(my_model.__dict__)
 for key in my_model.__dict__.keys():
   print("\t{}: ({}) - {}".format(key, type(my_model.__dict__[key]),
                                  my_model.__dict__[key]))
-

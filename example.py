@@ -6,4 +6,3 @@ print(type(date))
 isodate = datetime.isoformat(date)
 print(isodate)
 print(type(isodate))
-

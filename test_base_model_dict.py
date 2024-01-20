@@ -26,4 +26,3 @@ print(my_model is my_new_model)
 print(my_model.created_at is my_new_model.created_at)
 print(my_model.updated_at is my_new_model.updated_at)
 print(my_model.id is my_new_model.id)
-
