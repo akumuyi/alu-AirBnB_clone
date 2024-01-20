@@ -13,6 +13,8 @@ class BaseModel:
     Write a class BaseModel that defines
     all common attributes/methods for other classes:
     """
+
+
     def __init__(self, *args, **kwargs):
         """
         Public instance attributes:
@@ -45,6 +47,8 @@ class BaseModel:
                     self.name = kwargs.get(key)
                 else:
                     self.my_number = kwargs.get(key)
+
+
     def save(self):
         """
         save(self): updates the public instance attribute
@@ -55,6 +59,8 @@ class BaseModel:
         self.to_dict()
         storage.save()
         self.__dict__ = copy_datetime_dict
+
+
     def to_dict(self):
         new_dict = self.__dict__
         """
@@ -73,6 +79,8 @@ class BaseModel:
         """
         new_dict["__class__"] = type(self).__name__
         return new_dict
+
+
     def __str__(self):
         """
         should print:
